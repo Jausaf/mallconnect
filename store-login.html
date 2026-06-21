@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Login | MallConnect Bihar</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .login-container {
+            max-width: 400px;
+            margin: 100px auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .login-container h2 {
+            margin-bottom: 30px;
+            color: var(--primary-blue);
+        }
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .login-btn {
+            background: var(--primary-blue);
+            color: #fff;
+            border: none;
+            width: 100%;
+            padding: 12px;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .login-btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body style="background: var(--light-bg);">
+    <div class="login-container">
+        <a href="index.html"><img src="assets/images/logo.png" alt="MallConnect Logo" style="height: 60px; margin-bottom: 20px;"></a>
+        <h2>Store Dashboard Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label>Store ID / Email</label>
+                <input type="text" placeholder="Enter your Store ID" required>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+        <p style="margin-top: 20px; font-size: 0.9rem; color: #666;">
+            New partner? <a href="partners.html" style="color: var(--primary-blue); text-decoration: none;">Register your store</a>
+        </p>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Simple redirect for MVP demonstration
+            window.location.href = 'dashboard.html';
+        });
+    </script>
+</body>
+</html>

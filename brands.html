@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brands | MallConnect Bihar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/dist/css/all.min.css">
+    <style>
+        .brand-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .brand-item {
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        .brand-item:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-blue);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="assets/images/logo.png" alt="MallConnect Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="brands.html">Brands</a></li>
+                <li><a href="cities.html">Cities</a></li>
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="store-login.html" class="cta-button" style="padding: 0.5rem 1rem;">Store Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Our Partner Brands</h1>
+        <p>Explore products from the most trusted brands available in Bihar's top malls.</p>
+        
+        <div class="brand-grid">
+            <div class="brand-item">Levi's</div>
+            <div class="brand-item">Nike</div>
+            <div class="brand-item">Adidas</div>
+            <div class="brand-item">Zara</div>
+            <div class="brand-item">H&M</div>
+            <div class="brand-item">Puma</div>
+            <div class="brand-item">Max Fashion</div>
+            <div class="brand-item">Pantaloons</div>
+            <div class="brand-item">Reliance Trends</div>
+            <div class="brand-item">Biba</div>
+            <div class="brand-item">Manyavar</div>
+            <div class="brand-item">Titan</div>
+        </div>
+        
+        <div style="margin-top: 50px; text-align: center;">
+            <p>Are you a brand looking to expand in Bihar?</p>
+            <a href="partners.html" class="cta-button">Join Our Network</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MallConnect Bihar. One Platform. Every Brand. Every Mall. Every City.</p>
+    </footer>
+</body>
+</html>
